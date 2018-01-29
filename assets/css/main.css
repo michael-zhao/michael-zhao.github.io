@@ -27,22 +27,22 @@ body
   padding: 0;
 
   /* make it look decent enough */
-  background-color: #000080;
-  color: #cdcdcd;
+  background-color: black;
+  color: black;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
 a
 {
   text-decoration: none;
-  color: #232323;
+  color: black;
 
   transition: color 0.3s ease;
 }
 
 a:hover
 {
-  color: tomato;
+  color: black;
 }
 
 #menuToggle
@@ -116,7 +116,7 @@ a:hover
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: black;
 }
 
 /*
@@ -148,7 +148,7 @@ a:hover
   padding: 50px;
   padding-top: 125px;
 
-  background: #ededed;
+  background: gray;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -174,7 +174,7 @@ a:hover
 }
 
 .hero-bkg-animated {
-  background: gray url(https://cdn.pixabay.com/photo/2016/01/05/11/20/pattern-1122314_1280.jpg) repeat 0 0;
+  background: gray url(http://vunature.com/wp-content/uploads/2016/11/drops-multicolor-patterns-water-textures-nature-wallpaper-download-for-laptop.jpg) repeat 0 0;
   width: 100%;
 	height: 100%;
   margin: 0;
