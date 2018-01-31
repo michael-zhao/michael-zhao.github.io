@@ -178,8 +178,8 @@ a:hover
   width: 100%;
   margin: 0;
   text-align: center;
-  height: 650px;
-  padding-top: 84px;
+  height: 100%;
+  padding-top: 50px;
   -webkit-animation: slide 20s linear infinite;
 }
 
