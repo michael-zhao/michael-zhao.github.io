@@ -174,7 +174,7 @@ a:hover
 }
 
 .hero-bkg-animated {
-  background: gray url(https://i.imgur.com/YSFEwUW.png) repeat 0 0;
+  background: gray url(https://i.imgur.com/YSFEwUW.png) repeat center;
   width: 100%;
   margin: 0;
   text-align: center;
@@ -3408,7 +3408,10 @@ a:hover
 /* Wrapper */
 
 	.wrapper {
-		position: relative;
+		min-height:100;
+		height:auto;
+		height:100%;
+		margin:0 auto -4em;
 	}
 
 		.wrapper > .inner {
@@ -3693,6 +3696,10 @@ a:hover
 	}
 
 /* Footer */
+
+	#footer {bottom: 0;}
+
+	#footer li {color: gray;}
 
 	#sidebar + #wrapper + #footer {
 		margin-left: 18em;
