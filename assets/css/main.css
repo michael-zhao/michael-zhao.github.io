@@ -21,60 +21,6 @@
  * prefixes.
  */
 
-body
-{
-  margin: 0;
-  padding: 0;
-
-  /* make it look decent enough */
-  background-color: black;
-  color: black;
-  font-family: "Avenir Next", "Avenir", sans-serif;
-}
-
-a
-{
-  text-decoration: none;
-  color: black;
-
-  transition: color 0.3s ease;
-}
-
-a:hover
-{
-  color: black;
-}
-
-#menuToggle
-{
-  display: block;
-  position: relative;
-  top: 50px;
-  left: 50px;
-
-  z-index: 1;
-
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-
-  cursor: pointer;
-
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-
-  -webkit-touch-callout: none;
-}
-
 /*
  * Just a quick hamburger
  */
@@ -173,14 +119,26 @@ a:hover
   transform: none;
 }
 
+html {
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .hero-bkg-animated {
   background: gray url(https://i.imgur.com/YSFEwUW.png) repeat center;
   width: 100%;
-  margin: 0;
+  margin: 0px auto;
   text-align: center;
-  height: 100%;
-  padding-top: 50px;
+  padding-top: 35px;
   -webkit-animation: slide 20s linear infinite;
+	display: block;
+  position:absolute;
+  height:auto;
+  bottom:0;
+  top:0;
+  left:0;
+  right:0;
 }
 
 .hero-bkg-animated h1 {
@@ -199,6 +157,7 @@ a:hover
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		overflow:auto;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, section {
@@ -207,6 +166,8 @@ a:hover
 
 	body {
 		line-height: 1;
+		min-height: 100%;
+		height: 100%;
 	}
 
 	ol, ul {
